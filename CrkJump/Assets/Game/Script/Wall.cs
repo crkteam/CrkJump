@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wall : MonoBehaviour {
+public class Wall : MonoBehaviour
+{
 
-//	public string 
+	public int speed;
 	
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,15 @@ public class Wall : MonoBehaviour {
 	{
 		if (other.gameObject.name == "Player")
 		{
-			other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-500,0);
+			other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(speed,0);
+		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.name == "Player")
+		{
+			other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(speed,0);
 		}
 	}
 }

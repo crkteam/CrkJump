@@ -8,17 +8,16 @@ public class Meter : MonoBehaviour
     private bool meter_switch = true;
     private bool condition = true;
 
-    // Use this for initialization
-    void Start()
-    {
-    }
+    [SerializeField] private MainCharacter _mainCharacter;
+
+    private float value;
 
     // Update is called once per frame
     void Update()
     {
         if (meter_switch)
         {
-            float value = gameObject.GetComponent<Slider>().value;
+            value = gameObject.GetComponent<Slider>().value;
 
             if (value >= 100)
                 condition = false;
@@ -26,15 +25,31 @@ public class Meter : MonoBehaviour
                 condition = true;
 
             if (condition)
-                gameObject.GetComponent<Slider>().value += 1.5f;
+                gameObject.GetComponent<Slider>().value += 5f;
             else
-                gameObject.GetComponent<Slider>().value -= 1.5f;
+                gameObject.GetComponent<Slider>().value -= 5f;
         }
     }
 
     public void meter_stop()
     {
+        meter_choose();
         meter_switch = false;
+    }
+
+    void meter_choose()
+    {
+        if (value > 72)
+            _mainCharacter.jump_right();
+        else if (value > 26)
+        {
+            if (value > 47 && value < 52)
+                _mainCharacter.jump_up();
+            else
+                _mainCharacter.jump_up();
+        }
+        else
+            _mainCharacter.jump_left();
     }
 
     public void meter_start()

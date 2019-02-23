@@ -9,8 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Game" t="Include">
           <e p="Script" t="Include">
+            <e p="GameController.cs" t="Include" />
             <e p="MainCharacter.cs" t="Include" />
             <e p="Meter.cs" t="Include" />
+            <e p="test.cs" t="Include" />
             <e p="Wall.cs" t="Include" />
           </e>
         </e>
