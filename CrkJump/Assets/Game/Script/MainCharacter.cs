@@ -13,7 +13,7 @@ public class MainCharacter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        gameObject.GetComponent<Image>().sprite = left;
+//        gameObject.GetComponent<Image>().sprite = left;
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(500, 1500);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 5);
         // 這裡播放動畫
         gameObject.GetComponent<Animator>().SetTrigger("JumpR");
     }
@@ -50,7 +50,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-500, 1500);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-3, 5);
         // 這裡播放動畫
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
@@ -59,7 +59,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1500);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 5);
         
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
