@@ -6,11 +6,14 @@ public class test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log(gameObject.tag);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,5f);
+		}
 	}
 }
