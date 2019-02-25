@@ -9,11 +9,15 @@ public class GameController : MonoBehaviour
 	
 	// Use this for initialization
 	void Start () {
-		
+		InvokeRepeating("falldown",0,0.01f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		game.transform.position -= new Vector3(0,.05f,0);
+	}
+
+	void falldown()
+	{
+		game.transform.position -= new Vector3(0,.005f,0);
 	}
 }

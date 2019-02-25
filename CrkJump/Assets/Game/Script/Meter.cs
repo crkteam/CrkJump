@@ -9,28 +9,49 @@ public class Meter : MonoBehaviour
     private bool condition = true;
 
     [SerializeField] private MainCharacter _mainCharacter;
+    public GameObject pointer;
+    
+    private float value = 0;
 
-    private float value;
+    void Start()
+    {
+        InvokeRepeating("meter_main",0,0.01f);
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            meter_stop();
+        }
+    }
+
+    void meter_main()
+    {
+//        Debug.Log(value);
         if (meter_switch)
         {
-            value = gameObject.GetComponent<Slider>().value;
-
+            
             if (value >= 100)
                 condition = false;
             if (value <= 0)
                 condition = true;
 
+
             if (condition)
-                gameObject.GetComponent<Slider>().value += 5f;
+                point_addvalue(1);
             else
-                gameObject.GetComponent<Slider>().value -= 5f;
+                point_addvalue(-1);
         }
     }
 
+    void point_addvalue(float value)
+    {
+        this.value += value;
+        pointer.transform.position += new Vector3(value /25,0,0);
+    }
+    
     public void meter_stop()
     {
         meter_choose();
