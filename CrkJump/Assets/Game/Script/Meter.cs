@@ -10,12 +10,12 @@ public class Meter : MonoBehaviour
 
     [SerializeField] private MainCharacter _mainCharacter;
     public GameObject pointer;
-    
+
     private float value = 0;
 
     void Start()
     {
-        InvokeRepeating("meter_main",0,0.01f);
+        InvokeRepeating("meter_main", 0, 0.01f);
     }
 
     // Update is called once per frame
@@ -32,7 +32,6 @@ public class Meter : MonoBehaviour
 //        Debug.Log(value);
         if (meter_switch)
         {
-            
             if (value >= 100)
                 condition = false;
             if (value <= 0)
@@ -49,13 +48,16 @@ public class Meter : MonoBehaviour
     void point_addvalue(float value)
     {
         this.value += value;
-        pointer.transform.position += new Vector3(value /25,0,0);
+        pointer.transform.position += new Vector3(value / 25, 0, 0);
     }
-    
+
     public void meter_stop()
     {
-        meter_choose();
-        meter_switch = false;
+        if (meter_switch)
+        {
+            meter_choose();
+            meter_switch = false;
+        }
     }
 
     void meter_choose()

@@ -28,6 +28,16 @@ public class MainCharacter : MonoBehaviour
         {
             jump_right();
         }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {   
+            jump_big_left();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            jump_big_right();
+        }
 
         gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
 
@@ -54,17 +64,43 @@ public class MainCharacter : MonoBehaviour
         // 這裡播放動畫
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
+    
+    public void jump_big_left()
+    {
+        gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
+        
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-4, 6);
+        // 這裡播放動畫
+        gameObject.GetComponent<Animator>().SetTrigger("JumpL");
+    }
+    
+    public void jump_big_right()
+    {
+        gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
+        
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(4, 6);
+        // 這裡播放動畫
+        gameObject.GetComponent<Animator>().SetTrigger("JumpR");
+    }
 
     public void jump_up()
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 7);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 6);
         
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
 
     private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag.Equals("Board"))
+        {
+            _meter.meter_start();
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag.Equals("Board"))
         {
