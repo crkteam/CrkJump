@@ -41,7 +41,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 5);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(2, 6);
         // 這裡播放動畫
         gameObject.GetComponent<Animator>().SetTrigger("JumpR");
     }
@@ -50,7 +50,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-3, 5);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-2, 6);
         // 這裡播放動畫
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
@@ -59,7 +59,7 @@ public class MainCharacter : MonoBehaviour
     {
         gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 5);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 7);
         
         gameObject.GetComponent<Animator>().SetTrigger("JumpL");
     }
