@@ -5,7 +5,6 @@ using UnityEngine;
 public class Map : MonoBehaviour
 {
 
-	[SerializeField] private GameObject[] groups;
 	
 	// Use this for initialization
 	void Start () {
@@ -14,6 +13,6 @@ public class Map : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+//		gameObject.transform.position = Vector3.zero;
 	}
 }
