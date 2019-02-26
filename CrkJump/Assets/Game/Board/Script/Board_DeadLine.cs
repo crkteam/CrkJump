@@ -32,7 +32,7 @@ public class Board_DeadLine : MonoBehaviour
 	void create()
 	{
 		GameObject g = Instantiate(t);
-		g.transform.localPosition = new Vector3(0,40.5f,0);
+		g.transform.localPosition = new Vector3(0,41.5f,0);
 		g.transform.parent = group.transform;
 	}
 }

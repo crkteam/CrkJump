@@ -18,6 +18,6 @@ public class GameController : MonoBehaviour
 
 	void falldown()
 	{
-		game.transform.position -= new Vector3(0,.005f,0);
+		game.transform.position -= new Vector3(0,.015f,0);
 	}
 }
