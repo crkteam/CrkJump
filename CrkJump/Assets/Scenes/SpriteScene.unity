@@ -8930,7 +8930,7 @@ MonoBehaviour:
   GC: {fileID: 1862136778}
   MoveValueX: 0.001
   MaxValueX: 4.3
-  MaxValueY: -31.2
+  MaxValueY: -24.7
   MoveValueY: 0.001
 --- !u!212 &2117152535
 SpriteRenderer:

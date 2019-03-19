@@ -29,13 +29,30 @@ public class GameController : MonoBehaviour
         //0代表未解鎖 1代表可解鎖 2代表可使用
         //  Characterunlock();
    //    PlayerPrefs.SetInt("Pika", 2);
-      PlayerPrefs.SetInt("Hika", 2);
-     PlayerPrefs.SetInt("Pee", 2);
-       PlayerPrefs.SetInt("Kaka", 2);
-       PlayerPrefs.SetInt("Saka", 2);
-       PlayerPrefs.SetInt("Pika-Golden",2);
-
+//      PlayerPrefs.SetInt("Hika", 0);
+//     PlayerPrefs.SetInt("Pee", 0);
+//       PlayerPrefs.SetInt("Kaka", 0);
+//       PlayerPrefs.SetInt("Saka", 0);
+//       PlayerPrefs.SetInt("Pika-Golden",0);
+        if (PlayerPrefs.GetInt("init") == 0)
+        {
+            Init();
+        }
         musicController.openMusic();
+    }
+    
+    void Init()
+    {
+        PlayerPrefs.SetInt("CharacterType", 0);
+        PlayerPrefs.SetInt("init", 1);
+        PlayerPrefs.SetInt("Pika", 2);
+        PlayerPrefs.SetInt("Hika", 0);
+        PlayerPrefs.SetInt("Pee", 0);
+        PlayerPrefs.SetInt("Kaka", 0);
+        PlayerPrefs.SetInt("Saka", 0);
+        PlayerPrefs.SetInt("Pika-Golden", 0);
+        PlayerPrefs.SetInt("HighScore", 0);
+        PlayerPrefs.SetInt("CareerScore", 0);
     }
     // Update is called once per frame
     void Update()
