@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="508f237b-6d17-4c84-b802-58d72c7abc8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/BoardShade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BoardShade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Board_shade.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Board_shade.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Drop.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Drop.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hika-super.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hika-super.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kaka-super.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kaka-super.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pee-super.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pee-super.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pika_super.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pika_super.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saka-super.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saka-super.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SpriteScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SpriteScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Write.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Write.mp3.meta" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1872381099">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="166" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="166" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/GameController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="111" column="24" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
+              <folding>
+                <marker date="1552931936895" expanded="false" signature="6:100" ph="..." />
+                <marker date="1552931936895" expanded="true" signature="136:3050" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="562:698" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="720:1027" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="752:905" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="837:895" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="947:1021" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1090:1397" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1122:1391" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1435:1552" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1578:2505" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1612:1705" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1756:1845" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="1893:1979" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2027:2102" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2150:2236" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2292:2389" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2402:2492" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2537:2827" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2856:2976" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="2888:2970" ph="{...}" />
+                <marker date="1552931936895" expanded="true" signature="3007:3048" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/LockCharacter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/UnlockClick.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/MusicController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/SkinButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/FloorScore.cs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Board/Script/FloorController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1485">
+              <caret line="119" column="1" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/Script/MainCharacter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1485">
+              <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GC</find>
+      <find>isTrigger</find>
+      <find>set</find>
+      <find>open</find>
+      <find>text</find>
+      <find>door</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/BackgroundMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/MusicController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Button_Jump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/ScoreSpecailEffects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/StartButtonClick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CareerMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/MenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/SkinButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/MainCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CrkLink.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/UnlockClick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/LockCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/DoorSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/EffectController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/FloorScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/EffectContainter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/Wall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/ScreenController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Script/DeadlineController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Board/Script/CreateFloorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Board/Script/FloorController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/ButtonClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharaterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackgroundMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/FloorScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/CareerScoreControll.cs" />
+        <option value="$PROJECT_DIR$/Assets/CareerScoreController.cs" />
+        <option value="$PROJECT_DIR$/Assets/CareerMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/MenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/SkinButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeathMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScreenController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/Button_Jump.cs" />
+        <option value="$PROJECT_DIR$/Assets/DoorSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Music/MusicController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/DeadlineController.cs" />
+        <option value="$PROJECT_DIR$/Assets/EndAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnLockAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Layer.cs" />
+        <option value="$PROJECT_DIR$/Assets/LockCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/UnlockClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/aTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/EffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/CareerMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/LockCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/DoorSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/EffectContainter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/StartButtonClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClickAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/MenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ResurrectClickAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Line.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/EffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Board/Script/CreateFloorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoardShade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/SkinButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/BackgroundMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/MusicController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/Text_Idiot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/ScreenController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/MainCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Board/Script/FloorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/UnlockClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Script/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="riderModule/invalid/Default Android Facet" />
+    </ignored-facets>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Board" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Board" type="1045f7f1:UnityExplorerNode" />
+              <item name="Object" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Board" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Object" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="508f237b-6d17-4c84-b802-58d72c7abc8b" name="Default Changelist" comment="" />
+      <created>1550910767159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550910767159</updated>
+      <workItem from="1550910771517" duration="2131000" />
+      <workItem from="1550914477854" duration="5584000" />
+      <workItem from="1550922070350" duration="709000" />
+      <workItem from="1550926560375" duration="2332000" />
+      <workItem from="1550936988959" duration="2581000" />
+      <workItem from="1551016066655" duration="2970000" />
+      <workItem from="1551059692720" duration="2725000" />
+      <workItem from="1551062437646" duration="56000" />
+      <workItem from="1551062511600" duration="6000" />
+      <workItem from="1551062585195" duration="3864000" />
+      <workItem from="1551076847855" duration="195000" />
+      <workItem from="1551082537134" duration="3100000" />
+      <workItem from="1551102732959" duration="1125000" />
+      <workItem from="1551148214620" duration="1397000" />
+      <workItem from="1551184619839" duration="1868000" />
+      <workItem from="1551688280971" duration="15457000" />
+      <workItem from="1551790134499" duration="12074000" />
+      <workItem from="1551876061372" duration="7994000" />
+      <workItem from="1552049677238" duration="26700000" />
+      <workItem from="1552222421859" duration="7708000" />
+      <workItem from="1552269271644" duration="5995000" />
+      <workItem from="1552305924732" duration="15615000" />
+      <workItem from="1552394918674" duration="14194000" />
+      <workItem from="1552462373305" duration="2590000" />
+      <workItem from="1552478859499" duration="1363000" />
+      <workItem from="1552480404277" duration="1861000" />
+      <workItem from="1552482601031" duration="1563000" />
+      <workItem from="1552487296046" duration="3072000" />
+      <workItem from="1552497129391" duration="4588000" />
+      <workItem from="1552527792117" duration="5494000" />
+      <workItem from="1552566677794" duration="27000" />
+      <workItem from="1552573091889" duration="6604000" />
+      <workItem from="1552631371893" duration="2941000" />
+      <workItem from="1552666138472" duration="461000" />
+      <workItem from="1552671203612" duration="3298000" />
+      <workItem from="1552677746352" duration="5965000" />
+      <workItem from="1552684182494" duration="100000" />
+      <workItem from="1552723893590" duration="4254000" />
+      <workItem from="1552749620205" duration="5352000" />
+      <workItem from="1552758527672" duration="1267000" />
+      <workItem from="1552793034018" duration="2061000" />
+      <workItem from="1552797830842" duration="1135000" />
+      <workItem from="1552803026119" duration="1967000" />
+      <workItem from="1552810202416" duration="513000" />
+      <workItem from="1552811764955" duration="1569000" />
+      <workItem from="1552826728788" duration="5046000" />
+      <workItem from="1552908325547" duration="3157000" />
+      <workItem from="1552912838163" duration="38000" />
+      <workItem from="1552913068186" duration="434000" />
+      <workItem from="1552913637743" duration="169000" />
+      <workItem from="1552913919720" duration="352000" />
+      <workItem from="1552914353741" duration="233000" />
+      <workItem from="1552917191554" duration="3988000" />
+      <workItem from="1552922540081" duration="5358000" />
+      <workItem from="1552931659108" duration="335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="213535000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18168813" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Captures" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287858" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" weight="0.32894737" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Android Profiler" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="16" />
+      <window_info anchor="bottom" id="Logcat" order="17" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/CareerMenu.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ScreenController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DoorSwitch.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenuController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Music/MusicController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Hika.controller" />
+    <entry file="file://$PROJECT_DIR$/Assets/UnLockAnimation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/EndAnimation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/UnlockClick.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/test.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Board/Object/board.prefab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/aTest.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/target.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/46/8e01a075/AudioSource.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/LockCharacter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/EffectController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Button_Jump.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/test.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/ScoreSpecailEffects.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CareerMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CrkLink.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClickAnimation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/EffectContainter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ResurrectClickAnimation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Pika_big_Jump.prefab" />
+    <entry file="file://$PROJECT_DIR$/Assets/Line.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/Wall.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/ClickAnimation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/BoardShade.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/MenuController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/target.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/EffectContainter.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/DoorSwitch.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/DeadlineController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Board/Script/CreateFloorController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/BackgroundMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/EffectController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/StartButtonClick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Text_Idiot.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/ScreenController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/CharacterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/LockCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/UnlockClick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/MusicController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/SkinButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/FloorScore.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Board/Script/FloorController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="119" column="1" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/Script/MainCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/DeathMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Game/UI/Script/Meter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="111" column="24" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
+          <folding>
+            <marker date="1552931936895" expanded="false" signature="6:100" ph="..." />
+            <marker date="1552931936895" expanded="true" signature="136:3050" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="562:698" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="720:1027" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="752:905" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="837:895" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="947:1021" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1090:1397" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1122:1391" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1435:1552" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1578:2505" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1612:1705" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1756:1845" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="1893:1979" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2027:2102" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2150:2236" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2292:2389" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2402:2492" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2537:2827" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2856:2976" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="2888:2970" ph="{...}" />
+            <marker date="1552931936895" expanded="true" signature="3007:3048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
