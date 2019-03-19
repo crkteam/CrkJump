@@ -53,6 +53,7 @@ public class GameController : MonoBehaviour
         PlayerPrefs.SetInt("Pika-Golden", 0);
         PlayerPrefs.SetInt("HighScore", 0);
         PlayerPrefs.SetInt("CareerScore", 0);
+        
     }
     // Update is called once per frame
     void Update()
