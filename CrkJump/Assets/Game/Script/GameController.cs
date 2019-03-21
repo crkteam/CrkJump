@@ -5,42 +5,45 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private GameObject Game, Camera, Player, Background, ScoreSpecial, DeathMenu, DeathScoreText,Jump;
+    [SerializeField] private GameObject Game, Camera, Player, Background, ScoreSpecial, DeathMenu, DeathScoreText, Jump;
     [SerializeField] private CreateFloorController CFC;
     [SerializeField] private bool ButtonSwitch;
     [SerializeField] private TextMesh ScoreUI;
     [SerializeField] private float DownSpeed = .5f;
     [SerializeField] private float GrowthCoefficient = 0.0001f;
-    [SerializeField] private BackgroundMove  BM;
+    [SerializeField] private BackgroundMove BM;
     private DoorSwitch DS;
     private int Score = 0;
     private bool PlaySwitch = false, ResurrectTime = true;
 
     private int Rate = 1;
+    private int highScore;
 
     //Music
     [SerializeField] private MusicController musicController;
 
     void Start()
     {
-     //   PlayerPrefs.SetInt("HighScore",0);
-      // PlayerPrefs.SetInt("CareerScore",0);
-        
+        //   PlayerPrefs.SetInt("HighScore",0);
+        // PlayerPrefs.SetInt("CareerScore",0);
+
         //0代表未解鎖 1代表可解鎖 2代表可使用
         //  Characterunlock();
-   //    PlayerPrefs.SetInt("Pika", 2);
+        //    PlayerPrefs.SetInt("Pika", 2);
 //      PlayerPrefs.SetInt("Hika", 0);
 //     PlayerPrefs.SetInt("Pee", 0);
 //       PlayerPrefs.SetInt("Kaka", 0);
 //       PlayerPrefs.SetInt("Saka", 0);
 //       PlayerPrefs.SetInt("Pika-Golden",0);
+
         if (PlayerPrefs.GetInt("init") == 0)
         {
             Init();
         }
+
         musicController.openMusic();
     }
-    
+
     void Init()
     {
         PlayerPrefs.SetInt("CharacterType", 0);
@@ -53,8 +56,8 @@ public class GameController : MonoBehaviour
         PlayerPrefs.SetInt("Pika-Golden", 0);
         PlayerPrefs.SetInt("HighScore", 0);
         PlayerPrefs.SetInt("CareerScore", 0);
-        
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -70,8 +73,9 @@ public class GameController : MonoBehaviour
 
     public void StartGame()
     {
+        highScore = PlayerPrefs.GetInt("HighScore");
         CFC.FloorInitialize();
-       BM.StartBackground();
+        BM.StartBackground();
         SetButtonSwitch(true);
         SetScoreUI();
         SetJump(true);
@@ -81,6 +85,7 @@ public class GameController : MonoBehaviour
     {
         Jump.SetActive(Switch);
     }
+
     public bool GetResurrectTime()
     {
         return ResurrectTime;
@@ -100,9 +105,12 @@ public class GameController : MonoBehaviour
     public void SetScore()
     {
         int HighScore = PlayerPrefs.GetInt("HighScore");
+        
         if (HighScore < GetScore())
             PlayerPrefs.SetInt("HighScore", GetScore());
+        
         int CareerScore = PlayerPrefs.GetInt("CareerScore");
+        
         CareerScore += GetScore();
         PlayerPrefs.SetInt("CareerScore", CareerScore);
     }
@@ -172,6 +180,13 @@ public class GameController : MonoBehaviour
         SetRate(1);
         SetScoreUI();
         SetDownSpeed();
+        
+        // Over HighScore FeedBack
+        if (this.Score > highScore)
+        {
+            
+        }
+
         GameObject scorespecial = Instantiate(ScoreSpecial);
         scorespecial.transform.parent = GameObject.Find("PointManager").transform;
         scorespecial.GetComponent<TextMesh>().text = ScoreUI.text;

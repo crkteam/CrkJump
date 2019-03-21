@@ -17,6 +17,7 @@ public class MenuController : MonoBehaviour
 
     //Music
     private MusicController musicController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +30,8 @@ public class MenuController : MonoBehaviour
     }
 
     private void OnMouseDown()
-    {    
-        gameObject.GetComponent<SpriteRenderer>().color=new Color(1f,1f,1f,1f);
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         musicController.clickPlay();
         SwitchControll(Command);
     }
@@ -40,21 +41,16 @@ public class MenuController : MonoBehaviour
         switch (command)
         {
             case "Open":
-
                 StartCoroutine(OpenMenuObjecgt());
-
                 break;
             case "Close":
-
                 StartCoroutine(CloseMenuObjecgt());
-
                 break;
         }
     }
 
     private IEnumerator OpenMenuObjecgt()
     {
-        
         float temp = 0;
         while (true)
         {
@@ -64,7 +60,7 @@ public class MenuController : MonoBehaviour
             {
                 ControllGroupButton(false);
                 ControllButton(true);
-          //      ControllButtonColor();
+                //      ControllButtonColor();
                 Menu.transform.localScale = new Vector3(MaxSize, MaxSize, MaxSize);
                 gameObject.SetActive(!gameObject.activeSelf);
                 break;
@@ -79,24 +75,22 @@ public class MenuController : MonoBehaviour
         foreach (var button in ButtonGroup)
         {
             button.SetActive(Switch);
-        
         }
     }
+
     private void ControllButtonColor()
     {
-       
-            OpenButton.GetComponent<SpriteRenderer>().color=new Color(1f,1f,1f,1f);
-        
-            
+        OpenButton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
     }
+
     private void ControllGroupButtonColor()
     {
         foreach (var button in ButtonGroup)
         {
-            button.GetComponent<SpriteRenderer>().color=new Color(1f,1f,1f,1f);
+            button.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         }
-            
     }
+
     private void ControllButton(bool Switch)
     {
         OpenButton.SetActive(Switch);
@@ -112,7 +106,7 @@ public class MenuController : MonoBehaviour
             if (temp <= 0)
             {
                 ControllGroupButton(true);
-             //   ControllGroupButtonColor();
+                //   ControllGroupButtonColor();
                 gameObject.SetActive(!gameObject.activeSelf);
                 Menu.transform.localScale = new Vector3(0f, 0f, 0f);
                 break;

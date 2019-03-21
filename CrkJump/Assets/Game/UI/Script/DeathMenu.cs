@@ -51,10 +51,20 @@ public class DeathMenu : MonoBehaviour
     public void SetScore()
     {
         int HighScore = PlayerPrefs.GetInt("HighScore");
-        if (HighScore<GC.GetScore())
-            PlayerPrefs.SetInt("HighScore",GC.GetScore());
+        int nowScore = GC.GetScore();
+
+        if (HighScore < nowScore)
+        {
+            PlayerPrefs.SetInt("HighScore",nowScore);
+            // Resalut Over HighScore FeedBack
+        }
+
+        
+        
         int CareerScore = PlayerPrefs.GetInt("CareerScore");
-        CareerScore += GC.GetScore();
+        
+        CareerScore += nowScore;
+        
         PlayerPrefs.SetInt("CareerScore",CareerScore);
     }
 
