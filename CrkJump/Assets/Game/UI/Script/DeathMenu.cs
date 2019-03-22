@@ -14,7 +14,6 @@ public class DeathMenu : MonoBehaviour
     private string Command;
 
     private MusicController musicController;
-    // Start is called before the first frame update
 
     // Start is called before the first frame update
     void Start()
