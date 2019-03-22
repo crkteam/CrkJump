@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject DeadMenu, Text,ResurrectText,DeadScoreText;
+    [SerializeField] private GameObject DeadMenu, Text, ResurrectText, DeadScoreText;
     [SerializeField] private GameController GC;
     private int hika, pee, kaka, saka, pikagolden;
+
     [Tooltip("Input NotResuurect.Close or Resurrect Command")] [SerializeField]
     private string Command;
 
@@ -41,13 +42,14 @@ public class DeathMenu : MonoBehaviour
     {
         this.Command = command;
     }
+
     private void OnMouseDown()
     {
-        if(Command!="NotResuurect")
-        Switch();
+        if (Command != "NotResuurect")
+            Switch();
     }
 
-  
+
     public void SetScore()
     {
         int HighScore = PlayerPrefs.GetInt("HighScore");
@@ -55,17 +57,16 @@ public class DeathMenu : MonoBehaviour
 
         if (HighScore < nowScore)
         {
-            PlayerPrefs.SetInt("HighScore",nowScore);
+            PlayerPrefs.SetInt("HighScore", nowScore);
             // Resalut Over HighScore FeedBack
         }
 
-        
-        
+
         int CareerScore = PlayerPrefs.GetInt("CareerScore");
-        
+
         CareerScore += nowScore;
-        
-        PlayerPrefs.SetInt("CareerScore",CareerScore);
+
+        PlayerPrefs.SetInt("CareerScore", CareerScore);
     }
 
     private void Switch()
@@ -87,27 +88,33 @@ public class DeathMenu : MonoBehaviour
                 break;
         }
     }
+
     private void Characterunlock()
     {
         int HighScore = PlayerPrefs.GetInt("HighScore");
         int CareerScore = PlayerPrefs.GetInt("CareerScore");
-        if (HighScore >= 100&& hika==0)
+
+        if (HighScore >= 100 && hika == 0)
         {
             PlayerPrefs.SetInt("Hika", 1);
         }
-         if (HighScore >= 250&& pee==0)
+
+        if (HighScore >= 250 && pee == 0)
         {
             PlayerPrefs.SetInt("Pee", 1);
         }
-         if (CareerScore >= 5000 &&kaka==0)
+
+        if (CareerScore >= 5000 && kaka == 0)
         {
             PlayerPrefs.SetInt("Kaka", 1);
         }
-         if (CareerScore >= 10000 && HighScore >= 350&& saka==0)
+
+        if (CareerScore >= 10000 && HighScore >= 350 && saka == 0)
         {
             PlayerPrefs.SetInt("Saka", 1);
         }
-         if (CareerScore >= 100000&& pikagolden==0)
+
+        if (CareerScore >= 100000 && pikagolden == 0)
         {
             PlayerPrefs.SetInt("Pika-Golden", 1);
         }

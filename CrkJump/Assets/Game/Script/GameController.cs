@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject Game, Camera, Player, Background, ScoreSpecial, DeathMenu, DeathScoreText, Jump;
+    [SerializeField] private SpriteRenderer king;
     [SerializeField] private CreateFloorController CFC;
     [SerializeField] private bool ButtonSwitch;
     [SerializeField] private TextMesh ScoreUI;
@@ -17,7 +18,8 @@ public class GameController : MonoBehaviour
     private bool PlaySwitch = false, ResurrectTime = true;
 
     private int Rate = 1;
-    private int highScore;
+    private int highScore,highScroe_type = 0; // type 0:一般 1:超越歷史
+    
 
     //Music
     [SerializeField] private MusicController musicController;
@@ -99,20 +101,17 @@ public class GameController : MonoBehaviour
 
     public void ShowScore()
     {
-        DeathScoreText.GetComponent<TextMesh>().text = GetScore().ToString();
-    }
+        if (highScroe_type == 0)
+        {
+            DeathScoreText.GetComponent<TextMesh>().text = GetScore().ToString();
+        }
+        else
+        {
+            DeathScoreText.GetComponent<TextMesh>().text = highScore.ToString();
+            
+        }
 
-    public void SetScore()
-    {
-        int HighScore = PlayerPrefs.GetInt("HighScore");
-        
-        if (HighScore < GetScore())
-            PlayerPrefs.SetInt("HighScore", GetScore());
-        
-        int CareerScore = PlayerPrefs.GetInt("CareerScore");
-        
-        CareerScore += GetScore();
-        PlayerPrefs.SetInt("CareerScore", CareerScore);
+
     }
 
     public void SetButtonSwitch(bool Switch)
@@ -184,7 +183,12 @@ public class GameController : MonoBehaviour
         // Over HighScore FeedBack
         if (this.Score > highScore)
         {
-            
+            // addKing
+            if (king.enabled == false)
+            {
+                king.enabled = true;
+                highScroe_type = 1;
+            }
         }
 
         GameObject scorespecial = Instantiate(ScoreSpecial);
