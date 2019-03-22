@@ -9,10 +9,13 @@ public class GameController : MonoBehaviour
     [SerializeField] private SpriteRenderer king;
     [SerializeField] private CreateFloorController CFC;
     [SerializeField] private bool ButtonSwitch;
-    [SerializeField] private TextMesh ScoreUI;
+    [SerializeField] private TextMesh ScoreUI,sourceUI_Title;
     [SerializeField] private float DownSpeed = .5f;
     [SerializeField] private float GrowthCoefficient = 0.0001f;
     [SerializeField] private BackgroundMove BM;
+
+    [SerializeField] private Animator deathScroeText_Animator;
+    
     private DoorSwitch DS;
     private int Score = 0;
     private bool PlaySwitch = false, ResurrectTime = true;
@@ -26,17 +29,17 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        //   PlayerPrefs.SetInt("HighScore",0);
+        // PlayerPrefs.SetInt("HighScore",0);
         // PlayerPrefs.SetInt("CareerScore",0);
 
-        //0代表未解鎖 1代表可解鎖 2代表可使用
-        //  Characterunlock();
-        //    PlayerPrefs.SetInt("Pika", 2);
-//      PlayerPrefs.SetInt("Hika", 0);
-//     PlayerPrefs.SetInt("Pee", 0);
-//       PlayerPrefs.SetInt("Kaka", 0);
-//       PlayerPrefs.SetInt("Saka", 0);
-//       PlayerPrefs.SetInt("Pika-Golden",0);
+        // 0代表未解鎖 1代表可解鎖 2代表可使用
+        // Characterunlock();
+        // PlayerPrefs.SetInt("Pika", 2);
+        // PlayerPrefs.SetInt("Hika", 0);
+        // PlayerPrefs.SetInt("Pee", 0);
+        // PlayerPrefs.SetInt("Kaka", 0);
+        // PlayerPrefs.SetInt("Saka", 0);
+        // PlayerPrefs.SetInt("Pika-Golden",0);
 
         if (PlayerPrefs.GetInt("init") == 0)
         {
@@ -107,11 +110,25 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            sourceUI_Title.text = "HighScore:";
+            sourceUI_Title.transform.localPosition = new Vector3(0,18.8f,-1f);
             DeathScoreText.GetComponent<TextMesh>().text = highScore.ToString();
             
+            Invoke("ShowScore_Step1", 1f);
         }
-
-
+    }
+    
+    private void ShowScore_Step1()
+    {
+        musicController.surpassPlay();
+        deathScroeText_Animator.SetTrigger("ZoomOut");
+        Invoke("ShowScore_Step2", 0.8f);
+    }
+    
+    private void ShowScore_Step2()
+    {
+        DeathScoreText.GetComponent<TextMesh>().text = Score.ToString();
+        deathScroeText_Animator.SetTrigger("Zoom");
     }
 
     public void SetButtonSwitch(bool Switch)
@@ -163,8 +180,10 @@ public class GameController : MonoBehaviour
             DS = gameObject.GetComponent<DoorSwitch>();
             StartCoroutine(DS.DoorOpen(.5f));
             Transform ResurrectPosition = Player.GetComponent<MainCharacter>().GetLastPlayerPosition();
+            
             Player.transform.position = new Vector3(ResurrectPosition.transform.position.x,
                 ResurrectPosition.transform.position.y + 1f, 0f);
+            
             Camera.transform.position = new Vector3(0, Player.transform.position.y + 1.5f, -10f);
             Background.transform.position =
                 new Vector3(Camera.transform.position.x, Player.transform.position.y + 1.5f, 0f);

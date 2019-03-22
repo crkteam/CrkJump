@@ -18,11 +18,12 @@ public class Meter : MonoBehaviour
     void Start()
     {
         GC = GameObject.Find("Main Camera").GetComponent<GameController>();
-        InvokeRepeating("PointMove",0f,0.001f);
+        InvokeRepeating("PointMove",0f,0.001f); // 0.001
     }
 
     void PointMove()
     {
+        
         if (meter_switch)
         {
             meter_main();
@@ -61,7 +62,9 @@ public class Meter : MonoBehaviour
     void point_addvalue(float value)
     {
         this.value += value;
-        pointer.transform.localPosition += new Vector3(value / 9.4f, 0, 0);
+        pointer.transform.localPosition += new Vector3(value / 9f, 0, 0);
+
+        
     }
 
 

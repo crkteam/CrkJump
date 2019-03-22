@@ -15,8 +15,16 @@ public class ScreenController : MonoBehaviour
             RightBound.transform.localPosition=new Vector3(3.58f,0f,0f);
             Meter.transform.localScale=new Vector3(0.5837058f,0.5326316f,0f);
             Meter.transform.localPosition=new Vector3(0f,-4.69f,0f);
-            music_name.transform.localPosition = new Vector3(1.04f,5.7f,0);
+            music_name.transform.localPosition = new Vector3(1.2f,5.7f,0);
         }
+        else
+        {
+            #if UNITY_ANDROID
+                music_name.transform.localPosition = new Vector3(1.2f,6f,0);
+            #endif
+        }
+
+
     }
 
     // Update is called once per frame

@@ -31,12 +31,11 @@ public class DeadlineController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.Equals(Player) && GC.GetPlaySwitch())
-
-
         {
             GC.SetJump(false);
             StartCoroutine(DS.DoorClose(0f));
             musicController.deathPlay();
+            musicController.wallVolumeDown();
             GC.OpenDeathMenu();
             if (!GC.GetResurrectTime())
             {

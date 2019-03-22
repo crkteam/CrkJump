@@ -7,6 +7,7 @@ public class Wall : MonoBehaviour
 
 	public int speed;
 
+	[SerializeField] private MusicController musicController;
 	public GameObject ColliderFall;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,8 @@ public class Wall : MonoBehaviour
 	{
 		if (other.gameObject.name == "Player")
 		{
+			Debug.Log("test");
+			musicController.wallPlay();
 			other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(speed,0);
 			ColliderFall.GetComponent<ParticleSystem>().Play();
 			ColliderFall.transform.position=new Vector3(ColliderFall.transform.position.x,other.transform.position.y,0);
@@ -39,6 +42,8 @@ public class Wall : MonoBehaviour
 	{
 		if (other.gameObject.name == "Player")
 		{
+			Debug.Log("test");
+			musicController.wallPlay();
 			other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(speed,0);
 			ColliderFall.transform.position=new Vector3(ColliderFall.transform.position.x,other.transform.position.y,0);
 			ColliderFall.GetComponent<ParticleSystem>().Play();

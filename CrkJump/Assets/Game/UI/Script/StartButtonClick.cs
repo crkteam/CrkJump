@@ -33,6 +33,7 @@ public class StartButtonClick : MonoBehaviour
             startb = false;
             musicController.gameStart();
             musicController.taikoPlay();
+            musicController.wallVolumeUp();
             CharacterController.LoadCharacter();
             StartCoroutine(DS.DoorCloseandOpen(1f));
             StartCoroutine(GC.GameWait(.3f));
