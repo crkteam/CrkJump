@@ -25,6 +25,7 @@ public class UnlockClick : MonoBehaviour
        
         if (Value == 1)
         {
+            GameObject.Find("MusicController").GetComponent<MusicController>().unlockPlay();
             GameObject newOjbject = Instantiate(AnimationObject);
             newOjbject.transform.parent = gameObject.transform.parent.transform;
             newOjbject.transform.localPosition = gameObject.transform.localPosition;
@@ -32,8 +33,7 @@ public class UnlockClick : MonoBehaviour
             Destroy(gameObject,4);
             Destroy(newOjbject,3.6f);
             Invoke("OriginSize", 3.6f);
-            PlayerPrefs.SetInt(CharacterName,2);
-         
+            PlayerPrefs.SetInt(CharacterName,2);    
         }
     }
 

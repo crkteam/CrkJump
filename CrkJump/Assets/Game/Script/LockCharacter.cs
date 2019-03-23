@@ -14,7 +14,6 @@ public class LockCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         int Lock = PlayerPrefs.GetInt(CharacterName);
         if (Lock == 1) //click to unlock
         {
