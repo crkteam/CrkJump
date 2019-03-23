@@ -33,13 +33,13 @@ public class GameController : MonoBehaviour
         // PlayerPrefs.SetInt("CareerScore",0);
 
         // 0代表未解鎖 1代表可解鎖 2代表可使用
-        // Characterunlock();
-        // PlayerPrefs.SetInt("Pika", 2);
-        // PlayerPrefs.SetInt("Hika", 0);
-        // PlayerPrefs.SetInt("Pee", 0);
-        // PlayerPrefs.SetInt("Kaka", 0);
-        // PlayerPrefs.SetInt("Saka", 0);
-        // PlayerPrefs.SetInt("Pika-Golden",0);
+         //Characterunlock();
+         PlayerPrefs.SetInt("Pika", 2);
+         PlayerPrefs.SetInt("Hika", 2);
+         PlayerPrefs.SetInt("Pee", 2);
+         PlayerPrefs.SetInt("Kaka", 2);
+         PlayerPrefs.SetInt("Saka", 2);
+         PlayerPrefs.SetInt("Pika-Golden",2);
 
         if (PlayerPrefs.GetInt("init") == 0)
         {
