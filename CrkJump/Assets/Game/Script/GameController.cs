@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private GameObject Game, Camera, Player, Background, ScoreSpecial, DeathMenu, DeathScoreText, Jump;
+    [SerializeField] private GameObject Game, Camera, Player, Background, ScoreSpecial, DeathMenu, DeathScoreText, Jump,warnning_button;
     [SerializeField] private SpriteRenderer king;
     [SerializeField] private CreateFloorController CFC;
     [SerializeField] private bool ButtonSwitch;
@@ -47,7 +47,22 @@ public class GameController : MonoBehaviour
             Init();
         }
 
+        // 解鎖腳色提示
+        unlock_promt();
+        
         musicController.openMusic();
+    }
+
+    public void unlock_promt()
+    {
+        if (PlayerPrefs.GetInt("character_prompt") == 1)
+        {
+            warnning_button.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            warnning_button.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
     void Init()
@@ -62,6 +77,7 @@ public class GameController : MonoBehaviour
         PlayerPrefs.SetInt("Pika-Golden", 0);
         PlayerPrefs.SetInt("HighScore", 0);
         PlayerPrefs.SetInt("CareerScore", 0);
+        PlayerPrefs.SetInt("character_prompt",0);
     }
 
     // Update is called once per frame

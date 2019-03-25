@@ -34,6 +34,9 @@ public class UnlockClick : MonoBehaviour
             Destroy(newOjbject,3.6f);
             Invoke("OriginSize", 3.6f);
             PlayerPrefs.SetInt(CharacterName,2);    
+            PlayerPrefs.SetInt("character_prompt",0);
+            
+            GameObject.Find("Main Camera").GetComponent<GameController>().unlock_promt();
         }
     }
 

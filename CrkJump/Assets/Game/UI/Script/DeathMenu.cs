@@ -96,26 +96,31 @@ public class DeathMenu : MonoBehaviour
         if (HighScore >= 100 && hika == 0)
         {
             PlayerPrefs.SetInt("Hika", 1);
+            PlayerPrefs.SetInt("character_prompt",1);
         }
 
         if (HighScore >= 250 && pee == 0)
         {
             PlayerPrefs.SetInt("Pee", 1);
+            PlayerPrefs.SetInt("character_prompt",1);
         }
 
         if (CareerScore >= 5000 && kaka == 0)
         {
             PlayerPrefs.SetInt("Kaka", 1);
+            PlayerPrefs.SetInt("character_prompt",1);
         }
 
         if (CareerScore >= 10000 && HighScore >= 350 && saka == 0)
         {
             PlayerPrefs.SetInt("Saka", 1);
+            PlayerPrefs.SetInt("character_prompt",1);
         }
 
         if (CareerScore >= 100000 && pikagolden == 0)
         {
             PlayerPrefs.SetInt("Pika-Golden", 1);
+            PlayerPrefs.SetInt("character_prompt", 1);
         }
     }
 }
